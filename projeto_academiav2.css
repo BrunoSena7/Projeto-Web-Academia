@@ -1,0 +1,208 @@
+.fundo-logo {
+    background-image: url('imagem-interna-academia_silva.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(to right, #111, #000);
+    color: #fff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+
+.nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #0084ff;
+}
+
+
+.btn-matricula {
+    background-color: #0084ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-matricula:hover {
+    background-color: #005fa3;
+}
+
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #0084ff;
+}
+
+
+.container-planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.p-silva {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titulo-plano,
+.preco {
+    color: #0084ff;
+}
+
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.btn-topo:hover {
+    background-color: #005fa3;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
