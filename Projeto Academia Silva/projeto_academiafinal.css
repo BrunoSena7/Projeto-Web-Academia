@@ -1,0 +1,220 @@
+.fundo-logo {
+    background-image: url('imagem-interna-academia_silva.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    /* aumentada */
+    height: auto;
+    margin-right: 15px;
+}
+
+.slogan {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #0084ff;
+}
+
+.btn-matricula {
+    background-color: #0084ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-matricula:hover {
+    background-color: #005fa3;
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #0084ff;
+}
+
+.container-planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.p-silva {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titulo-plano,
+.preco {
+    color: #0084ff;
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.btn-topo:hover {
+    background-color: #005fa3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contato {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.contato h2 {
+    margin-top: 0;
+    color: #0084ff;
+}
+
+.contato a {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.galeria .imagem {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.galeria .imagem img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria .imagem p {
+    margin: 10px 0;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
