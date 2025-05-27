@@ -1,0 +1,25 @@
+.fundoweb {
+    background-color: #0084ff;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    margin: 20px;
+    border-radius: 8px;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
